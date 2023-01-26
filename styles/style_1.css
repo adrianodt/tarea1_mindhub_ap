@@ -59,3 +59,8 @@ main article h3 {
 main article p {
     margin-left: 10px;
 }
+
+main p, .foto3 {
+    margin-top: 20px;
+    margin-left: 200px;
+}
