@@ -34,8 +34,10 @@ nav a {
     display: block;
 }
 
-.foto1, .foto2 {
-    display: none;
+.foto1, .foto2, .foto3{
+    margin-top: 10px;
+    width: 600px;
+   
 }
 
 main h2 {
