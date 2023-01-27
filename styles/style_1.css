@@ -22,22 +22,22 @@ header h1 {
 }
 
 .container_logo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: 1px solid black;
-  position: relative;
+  transform: translate(1000px, 160px);
   top: 180px;
   left: 1141px;
   background-color: white;
 }
 
 nav {
-  margin: 200px 10px 10px 10px;
+  transform: translateY(180px);
+  padding-left: 20px;
 }
 
 nav a {
-  width: 100px;
-  margin-top: 70px;
+  margin-bottom: 70px;
   display: block;
 }
 
@@ -58,6 +58,7 @@ main h2 {
 main article {
   margin-top: 30px;
   margin-left: 200px;
+  padding-top: 20px;
 }
 
 main article h3 {
@@ -69,6 +70,6 @@ main article p {
 }
 
 .contacto_main {
-  margin-top: 40px;
+  margin-top: 70px;
   margin-left: 200px;
 }
