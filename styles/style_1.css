@@ -19,6 +19,7 @@ header h1 {
   color: white;
   font-size: 70px;
   text-shadow: 3px 3px 7px black;
+  font-style: oblique;
 }
 
 .container_logo {
@@ -32,7 +33,7 @@ header h1 {
 }
 
 nav {
-  transform: translateY(180px);
+  transform: translateY(155px);
   padding-left: 20px;
 }
 
@@ -71,6 +72,6 @@ main article {
     padding-bottom: 10px;
 }
   .contacto_main {
-    margin-top: 40px;
+    margin-top: 48px;
     margin-left: 200px;
   }
