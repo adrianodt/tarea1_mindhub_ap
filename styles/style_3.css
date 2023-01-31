@@ -25,18 +25,24 @@ header h1 {
 }
 
 nav {
-  position: absolute;
-  top: 270px;
-  left: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-content: flex-start;
 }
 
 nav a {
   border: solid 1px black;
   border-radius: 20px;
+  width: 180px;
   text-align: center;
-  display: block;
   padding: 7px 10px;
-  margin-top: 20px;
   background-color: orange;
   color: white;
   text-decoration: none;
@@ -44,38 +50,47 @@ nav a {
   box-shadow: 5px 5px 10px black;
 }
 
+nav a:hover {
+  transition-duration: 0.3s, 0.8s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .active {
   background-color: orangered;
 }
 
 .container_logo {
-  width: 150px;
-  height: 150px;
-  transform: translate(20px, 20px);
-  top: 180px;
-  left: 1141px;
-  background-color: white;
-  box-shadow: 5px 5px 10px orange;
+  margin-left: 15px;
 }
 
-.foto1,
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+  align-content: flex-start;
+}
+
+/* .foto1,
 .foto2,
 .foto3 {
   margin-top: 10px;
   width: 400px;
-}
+} */
 
-main h2 {
-  position: absolute;
-  width: 400px;
-  top: 713px;
-  left: -60px;
+/* main h2 {
+  
+  
   rotate: -90deg;
-  padding: 25px;
+  
   color: white;
   background-color: black;
-  text-align: center;
-}
+  
+} */
 
 main article {
   margin-top: 30px;
