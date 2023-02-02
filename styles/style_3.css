@@ -93,8 +93,13 @@ main {
   font-size: 30px;
 }
 
-
-
 .container-article > p {
   text-indent: 10px;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
