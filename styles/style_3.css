@@ -168,8 +168,30 @@ h4 {
   margin-bottom: 10px;
 }
 
-
-dd, li {
+dd,
+li {
   font-size: 20px;
   padding: 10px;
+}
+
+.mapas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 30px;
+  border-radius: 35px;
+  margin: 70px 50px;
+  background-color: black;
+}
+
+.mapas .h3locations {
+  position: absolute;
+  top: 837px;
+  left: 94px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px 40px;
+  color: aliceblue;
 }
