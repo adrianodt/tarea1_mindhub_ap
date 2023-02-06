@@ -1,35 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mighty Ducks Hockey League</title>
-    <link rel="stylesheet" href="./styles/style_3.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style_3.css" />
+  </head>
+  <body>
     <header>
-        <div class="container-logo">
-          <img
-            class="logoMD"
-            src="./img/Logo_Mighty_ducks-01.png"
-            alt="logo Mighty Ducks Hockey League"
-          />
-          <h1>Mighty Ducks Hockey League</h1>
-        </div>
-        <nav>
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About MDHL</a>
-          <a href="./contact.html" >Contact</a>
-          <a href="./game_info.html">Game Info</a>
-          <a href="./rules.html">Rules</a>
-          <a href="#" class="active">Registration</a>
-        </nav>
-      </header>
-      <main class="container-main">
-        <div class="container-h2">
-          <h2>Registration Form</h2>
-        </div>
+      <div class="container-logo">
+        <img
+          class="logoMD"
+          src="./img/Logo_Mighty_ducks-01.png"
+          alt="logo Mighty Ducks Hockey League"
+        />
+        <h1>Mighty Ducks Hockey League</h1>
+      </div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About MDHL</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./game_info.html">Game Info</a>
+        <a href="./rules.html">Rules</a>
+        <a href="#" class="active">Registration</a>
+      </nav>
+    </header>
+    <main class="container-main">
+      <div class="container-h2">
+        <h2>Registration Form</h2>
+      </div>
+
+      <form action="./show_data.html" method="get" target="_blank">
+        <fieldset>
+          <!-- <legend>Registration Form</legend> -->
+          <label for="fname">Player's First Name:</label>
+          <input type="text" name="fname" id="fname" />
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" />
+          <label for="address">Street Address:</label>
+          <input type="text" name="address" id="address" />
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" />
+          <label for="zipcode">Zip Code:</label>
+          <input type="text" name="zipcode" id="zipcode" />
+          <label for="birth">Birth Date (mm/dd/yyy):</label>
+          <input type="text" name="birth" id="birth" />
+        </fieldset>
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="female" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Grade</legend>
+          <input type="radio" id="preschool" name="grade" value="preschool" />
+          <label for="preschool">Pre-School</label>
+          <input type="radio" id="1st" name="grade" value="1st" />
+          <label for="1st">1st.</label>
+          <input type="radio" id="2nd" name="grade" value="2nd" />
+          <label for="2nd">2nd.</label>
+          <input type="radio" id="3rd" name="grade" value="3rd" />
+          <label for="3rd">3rd.</label>
+          <input type="radio" id="4th" name="grade" value="4th" />
+          <label for="4th">4th.</label>
+          <input type="radio" id="5th" name="grade" value="5th" />
+          <label for="5th">5th.</label>
+        </fieldset>
+
+        <h3>Which elementary school do you live near?</h3>
+        <fieldset>
+          <legend>Closest school:</legend>
+          <label>
+            <input type="radio" name="school" value="AJ Katzenmaier" />
+            <span>AJ Katzenmaier</span>
+          </label>
+          <label>
+            <input type="radio" name="school" value="Greenbay" />
+            <span>Greenbay</span>
+          </label>
+          <label>
+            <input type="radio" name="school" value="Howard A Yeager" />
+            <span>Howard A Yeager</span>
+          </label>
+          <label>
+            <input type="radio" name="school" value="Marjorie P Hart" />
+            <span>Marjorie P Hart</span>
+          </label>
+          <label>
+            <input type="radio" name="school" value="North Elementary" />
+            <span>North Elementary</span>
+          </label>
+          <label>
+            <input type="radio" name="school" value="South Elementary" />
+            <span>South Elementary</span>
+          </label>
+        </fieldset>
+
+        <h3>What position(s) do you usually play? (check all that apply)</h3>
+        <fieldset>
+          <label>
+            <input type="checkbox" name="position" value="Forward" />
+            <span>Forward</span>
+          </label>
+          <label>
+            <input type="checkbox" name="position" value="Defense" />
+            <span>Defense</span>
+          </label>
+          <label>
+            <input type="checkbox" name="position" value="Midfielder" />
+            <span>Midfielder</span>
+          </label>
+          <label>
+            <input type="checkbox" name="position" value="Goalkeeper" />
+            <span>Goalkeeper</span>
+          </label>
+        </fieldset>
+
+        <h3>Uniform Size</h3>
+        <fieldset>
+          <label>
+            <input type="radio" name="size" value="Youth Small" />
+            <span>Youth Small</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="Youth Medium" />
+            <span>Youth Medium</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="Youth Large" />
+            <span>Youth Large</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="Small" />
+            <span>Small</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="Medium" />
+            <span>Medium</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="Large" />
+            <span>Large</span>
+          </label>
+          <label>
+            <input type="radio" name="size" value="Extra Large" />
+            <span> Extra Large</span>
+          </label>
+        </fieldset>
+        <h3>Permission to play</h3>
+        <p>
+          I, the parent or guardian of the minor registrant,agree that the
+          registrant and I will abide by all the rules of the Mighty Ducks
+          Hockey League (MDHL). In recognizing the possibility of physical
+          injury associated with hockey and in consideration for the "League"
+          accepting the registrant for its hockey programs and activities, I
+          hereby release, discharge, and/or othterwise indemnify MDHL,
+          thieremployees and associated personnel and volunteers, including the
+          facilities used for practices and games, against any claim by or on
+          behalf of the registrant as a result of the registrant's participation
+          in the program and/or being transported to or from MDHL sponsored
+          activities, which transportation. By signing below, I hereby agree and
+          authorize the above. In addition, by signing below, I also acknowledge
+          that I have read the cancellation policy and agree to its terms.
+        </p>
+        <fieldset>
+          <label>
+            <span>Parent / Guardian Signature:</span>
+            <input type="text" name="signature" id="signature" />
+          </label>
+          <label>
+            <span>Date:</span>
+            <input type="text" name="date" id="date" />
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
-</body>
+  </body>
 </html>
